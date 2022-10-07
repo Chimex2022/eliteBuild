@@ -11,8 +11,12 @@ body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  background-color: pink;
- 
+  scroll-behavior: smooth;
+  background-image: url(imgs/Ball_Stadium_1200x628.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 :root {
@@ -104,6 +108,8 @@ nav a:hover {
   font-size: 15px;
   margin-top: 80px;
   text-align: center;
+  color: var(--color-dark);
+  font-weight: bolder;
 }
 .desc-img {
   display: flex;
@@ -113,19 +119,22 @@ nav a:hover {
   gap: 2rem;
   align-items: center;
 }
-.author-img {
-  width: 315px;
-  height: 392px;
+
+.desc-img p {
+  color: var(--color-white);
 }
+
 .author-img > img {
   width: 100%;
   height: 100%;
 }
+
 .head-title {
   margin-top: 80px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   text-align: center;
-  font-size: 15px;
+  font-size: 17px;
+  font-weight: bolder;
 }
 .section-directors-1 {
   display: flex;
@@ -148,14 +157,13 @@ nav a:hover {
   margin-top: 4rem;
   margin-bottom: 6rem;
 }
- .section-directors-2 img {
+.section-directors-2 img {
   transform: scale(0.9);
+  border-radius: 10px;
 }
 
-
-.gallery_badge{
+.gallery_badge {
   width: 90%;
-  height: auto;
   margin: 0 auto;
   background-color: var(--color-dark-blue);
   border-radius: 10px;
@@ -164,76 +172,96 @@ nav a:hover {
 .gallery_badge h3 {
   color: var(--color-white);
   text-align: center;
-  font-weight: 500;
-  font-size: 25px;
+  font-weight: bolder;
+  font-size: 20px;
 }
-
 
 .hold-ball {
   margin: 0 auto;
   width: 60%;
-
 }
 .hold-ball > img {
   width: 100%;
- 
 }
-.hold-ball > img:hover{
+.hold-ball > img:hover {
   opacity: 0.5;
   cursor: pointer;
 }
 
-
-.first-img{
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(3, 1fr);
-gap: 2rem;
-border-radius: 2rem;
-margin: 4rem;
-padding: 2rem;
+.first-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+  border-radius: 2rem;
+  margin: 2rem;
+  padding: 2rem;
 }
-.first-img img{
-object-fit: cover;
-width: 100%;
-border-radius: 2rem;
-object-position: bottom;
+.first-img img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 2rem;
+  object-position: bottom;
 }
-.first-img img:hover{
+.first-img img:hover {
   transform: translateY(-10px);
   cursor: pointer;
 }
-.img-p p{
+.img-p p {
   text-align: center;
-  color: var(--color-dark);
+  color: var(--color-white);
   font-weight: bolder;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .description {
   margin: 0 auto;
   text-align: center;
-
 }
 .description h2 {
   margin-top: 40px;
-  font-weight: 500;
+  font-weight: bolder;
   font-size: 20px;
   color: var(--color-dark);
   font-weight: bolder;
   margin-bottom: 40px;
 }
 
-.details {
-  text-align: center;
+.description span {
   margin: 0 auto;
+  text-align: justify;
   font-weight: lighter;
   line-height: 1.3;
-  word-spacing: 3px;
   font-size: 18px;
-
+  color: var(--color-white);
+  font-weight: bolder;
 }
 
+.congrats_message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background-color: var(--color-dark-blue);
+  margin-top: 3rem;
+}
+
+.congrats_message span {
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bolder;
+  color: var(--color-white);
+}
+
+.congrats_message img {
+  transform: scale(0.7);
+}
+
+hr {
+  width: 150%;
+  border-bottom: 0.5px solid white;
+  margin: 5px auto;
+}
 
 footer {
   display: flex;
@@ -243,7 +271,7 @@ footer {
   justify-content: space-between;
   margin-top: 3rem;
   background-color: var(--color-dark);
-  font-size: 20px;
+  font-size: 16px;
   line-height: 20px;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
@@ -291,12 +319,6 @@ footer span:hover {
   width: 20px;
 }
 
-hr {
-  width: 150%;
-  border-bottom: 0.5px solid white;
-  margin: 5px auto;
-}
-
 .contact_info {
   display: flex;
   flex-direction: row;
@@ -306,7 +328,7 @@ hr {
   padding: 5px;
 }
 
-.contact_info a{
+.contact_info a {
   text-decoration: none;
   color: var(--color-white);
 }
@@ -319,6 +341,6 @@ hr {
   color: var(--color-white);
 }
 
-.contact_info a:hover{
+.contact_info a:hover {
   color: var(--color-orange);
 }

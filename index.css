@@ -12,9 +12,12 @@ body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  background-color: pink;
   scroll-behavior: smooth;
- 
+  background-image: url(imgs/Ball_Stadium_1200x628.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 :root {
@@ -159,7 +162,11 @@ nav a:hover {
   opacity: 0;
   animation: caption 0.5s ease-in forwards;
   animation-delay: 1.2s;
+  font-size: 30px;
+  font-weight: bolder;
+  color: var(--color-orange);
 }
+
 @keyframes caption {
   0% {
     opacity: 0.8;
@@ -256,7 +263,7 @@ nav a:hover {
 }
 
 .about-image {
-  background-image: url("imgs/Rectangle\ 132.png");
+  background-image: url('imgs/Rectangle\ 132.png');
   background-color: #cccccc;
   height: 500px;
   background-position: top;
@@ -266,13 +273,13 @@ nav a:hover {
   overflow: hidden;
 }
 
-#about{
+#about {
   width: 100%;
   border-radius: 8px;
   background-color: var(--color-dark-blue);
 }
 
-#about p{
+#about p {
   text-align: center;
   font-weight: 600;
   font-size: 20px;
@@ -288,11 +295,11 @@ nav a:hover {
   color: white;
 }
 
-.about-small{
+.about-small {
   font-size: 20px;
 }
 
-.btn_download{
+.btn_download {
   margin-top: 4rem;
   padding: 15px 20px;
   background-color: var(--color-orange);
@@ -301,6 +308,13 @@ nav a:hover {
   text-align: center;
   border-radius: 10px;
   font-size: 20px;
+}
+
+.btn_download:hover {
+  background-color: transparent;
+  border: 2px solid var(--color-orange);
+  color: var(--color-white);
+  font-weight: bolder;
 }
 
 .games_section {
@@ -314,9 +328,8 @@ nav a:hover {
   font-size: 25px;
 }
 
-#game{
+#game {
   width: 90%;
-  height: auto;
   margin: 0 auto;
   background-color: var(--color-dark-blue);
   border-radius: 10px;
@@ -325,8 +338,8 @@ nav a:hover {
 #game p {
   color: var(--color-white);
   text-align: center;
-  font-weight: 500;
-  font-size: 25px;
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 .images_gallery {
@@ -342,6 +355,7 @@ nav a:hover {
 .image_item p {
   text-align: center;
   font-weight: bolder;
+  color: var(--color-white);
 }
 
 .images_gallery img {
@@ -382,6 +396,7 @@ nav a:hover {
 .award_images h2,
 p {
   text-align: center;
+  color: var(--color-white);
 }
 
 .vision {
@@ -397,19 +412,19 @@ p {
   font-weight: bolder;
   text-align: center;
   font-size: 18px;
+  color: var(--color-white);
 }
 
 .vision p {
   text-align: center;
   font-size: 18px;
+  color: var(--color-white);
 }
 
 .img_vision {
   justify-content: center;
   display: flex;
   align-items: center;
-
-  
 }
 
 .img_vision img {
@@ -417,14 +432,12 @@ p {
   object-fit: cover;
   height: auto;
   object-position: bottom;
-
 }
 
 #technical {
   width: 100%;
   margin-top: 4rem;
   border-radius: 7px;
-
 }
 
 .tech {
@@ -442,20 +455,17 @@ p {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .container_items {
   margin: 3px;
   padding: 20px;
-  transform: scale(0.8);
 }
 
 .container_images img {
-  width: 100%;
-  object-fit: cover;
-  height: auto;
-  object-position: cover;
+  width: 170px;
+  height: 170px;
 }
 
 .technical_info {
@@ -467,20 +477,22 @@ p {
 }
 
 .technical_info > span:nth-child(1) {
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 1rem;
   font-weight: bolder;
   text-align: center;
+  color: var(--color-white);
 }
 .technical_info > span:nth-child(2) {
   color: var(--color-light-blue);
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   font-weight: bolder;
 }
 
 .technical_info small {
-  font-size: medium;
+  color: var(--color-white);
+  font-size: 14px;
 }
 
 .btn_sport {
@@ -503,6 +515,7 @@ p {
   text-align: justify;
   font-size: medium;
   margin-top: 20px;
+  color: var(--color-white);
 }
 
 .symbol_section {
@@ -590,6 +603,7 @@ p {
   margin-top: 1rem;
   padding: 0.5px;
 }
+
 hr {
   width: 150%;
   border-bottom: 0.5px solid white;
@@ -661,7 +675,7 @@ footer span:hover {
   padding: 5px;
 }
 
-.contact_info a{
+.contact_info a {
   text-decoration: none;
   color: var(--color-white);
 }
@@ -674,6 +688,6 @@ footer span:hover {
   color: var(--color-white);
 }
 
-.contact_info a:hover{
+.contact_info a:hover {
   color: var(--color-orange);
 }
